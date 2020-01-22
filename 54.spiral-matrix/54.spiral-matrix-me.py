@@ -50,3 +50,16 @@ class Solution:
         return elems
 
 # @lc code=end
+
+import time
+from spiral_matrix_tests import *
+
+if __name__ == "__main__":
+    tic = time.clock()
+    for _ in range(num_tests):
+        for j in range(len(inputs)):
+            solution = Solution()
+            solution.spiralOrder(inputs[j])
+    toc = time.clock()
+
+    print(round(toc-tic, 3))

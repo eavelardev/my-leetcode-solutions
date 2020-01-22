@@ -10,17 +10,16 @@ class Solution:
         m, n = len(A), len(A[0])
         graph = {}
         
-        def neighbors(i,j):
+        def neighbors(i,j, comp):
             for k, l in ((i,j-1),(i-1,j),(i,j+1),(i+1,j)):
-                if 0 <= k < m and 0 <= l < n:
+                if 0 <= k < m and 0 <= l < n and A[k][l] == comp:
                     yield k, l 
                     
         def dfs(node, visited, coast):
             visited[node] = True
             
-            for k,l in neighbors(*node):
-                if A[k][l] == 0:
-                    coast.add((k,l))
+            for k,l in neighbors(*node, 0):
+                coast.add((k,l))
             
             for next_node in graph[node]:
                 if visited[next_node] is False:
@@ -29,7 +28,7 @@ class Solution:
         for i in range(m):
             for j in range(n):                
                 if A[i][j]:      
-                    graph[(i,j)] = [(k,l) for k,l in neighbors(i,j) if A[k][l]]
+                    graph[(i,j)] = [(k,l) for k,l in neighbors(i,j, 1)]
 
         visited = {node: False for node in graph}
         coasts = []
@@ -52,12 +51,27 @@ class Solution:
 
             new_coast = set()
             for node in coast1:
-                for k, l in neighbors(*node):
-                    if A[k][l] == 0:
-                        new_coast.add((k,l))
+                for k, l in neighbors(*node, 0):
+                    new_coast.add((k,l))
 
             coast1 = new_coast
             size_bridge += 1
-        
+           
 # @lc code=end
+
+import time
+import sys 
+from shortest_bridge_tests import *
+
+sys.setrecursionlimit(10**6) 
+
+if __name__ == "__main__":
+    solution = Solution()
+    tic = time.clock()
+    for f in range(num_tests):
+        for h in range(len(inputs)):
+            solution.shortestBridge(inputs[h])
+    toc = time.clock()
+
+    print(round(toc-tic, 3))
 

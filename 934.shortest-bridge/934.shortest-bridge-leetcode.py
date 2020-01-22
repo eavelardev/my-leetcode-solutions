@@ -4,6 +4,8 @@
 # [934] Shortest Bridge
 #
 
+import collections
+
 # @lc code=start
 class Solution(object):
     def shortestBridge(self, A):
@@ -34,7 +36,7 @@ class Solution(object):
             return components
 
         source, target = get_components()
-        print(source, target)
+        # print(source, target)
         queue = collections.deque([(node, 0) for node in source])
         done = set(source)
         while queue:
@@ -47,3 +49,15 @@ class Solution(object):
         
 # @lc code=end
 
+import time
+from shortest_bridge_tests import *
+
+if __name__ == "__main__":
+    solution = Solution()
+    tic = time.clock()
+    for _ in range(num_tests):
+        for j in range(len(inputs)):
+            solution.shortestBridge(inputs[j])
+    toc = time.clock()
+
+    print(round(toc-tic, 3))
