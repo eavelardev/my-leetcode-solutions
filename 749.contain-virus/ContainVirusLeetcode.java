@@ -6,8 +6,9 @@
 
 // @lc code=start
 
-class ContainVirusLeetcode {
 // class Solution {
+class ContainVirusLeetcode {
+    
     Set<Integer> seen;
     List<Set<Integer>> regions;
     List<Set<Integer>> frontiers;

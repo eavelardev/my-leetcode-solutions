@@ -8,8 +8,9 @@ import java.util.*;
 
 // @lc code=start
 
-class QueensThatCanAttackTheKingMy {
 // class Solution {
+class QueensThatCanAttackTheKingMy {
+    
     public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
         
         int[][] directions = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};

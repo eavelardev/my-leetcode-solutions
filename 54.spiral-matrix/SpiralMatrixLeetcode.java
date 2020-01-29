@@ -7,8 +7,9 @@
 import java.util.*;
 
 // @lc code=start
-public class SpiralMatrixLeetcode {
+
 // class Solution {
+public class SpiralMatrixLeetcode {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> ans = new ArrayList<>();
         if (matrix.length == 0) return ans;

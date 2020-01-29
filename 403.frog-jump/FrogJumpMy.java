@@ -8,11 +8,12 @@ import java.util.*;
 
 // @lc code=start
 
-class FrogJumpMy {
 // class Solution {
+class FrogJumpMy {
+    
     public boolean canCross(int[] stones) {
         
-        List<Integer> lstones = new ArrayList<Integer>();
+        List<Integer> lstones = new ArrayList<>();
         for (int stone :stones) lstones.add(stone);
         int last_stone = lstones.get(lstones.size()-1);
 

@@ -5,8 +5,10 @@
  */
 
 // @lc code=start
-class ContainVirusMy {
+
 // class Solution {
+class ContainVirusMy {
+    
     public int containVirus(int[][] grid) {
 
         int n = grid[0].length;
