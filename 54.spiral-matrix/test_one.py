@@ -1,6 +1,7 @@
 import time
-# from spiral_matrix_leetcode import *
-from spiral_matrix_my import *
+from spiral_matrix_leetcode_simulation import *
+# from spiral_matrix_leetcode_layer_by_layer import *
+# from spiral_matrix_my import *
 from data import *
 
 if __name__ == "__main__":
