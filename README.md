@@ -11,8 +11,6 @@ I add the solutions to the problems that are better than leetcode solution in ex
 
 * [spiral_matrix_my.py (better)](54.spiral-matrix/spiral_matrix_my.py)
 
-[749. Contain Virus](https://leetcode.com/articles/contain-virus/)
-
 130\. Surrounded Regions
 
 * [surrounded_regions_my.py](130.surrounded-regions/surrounded_regions_my.py)
@@ -24,6 +22,8 @@ I add the solutions to the problems that are better than leetcode solution in ex
 403\. Frog Jump
 
 * [FrogJumpMy.java](403.frog-jump/FrogJumpMy.java)
+
+[749. Contain Virus](https://leetcode.com/articles/contain-virus/)
 
 [827. Making A Large Island](https://leetcode.com/articles/making-a-large-island/)
 
