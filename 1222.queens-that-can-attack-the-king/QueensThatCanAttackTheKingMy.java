@@ -8,7 +8,7 @@ import java.util.*;
 
 // @lc code=start
 
-class QueensThatCanAttackTheKingMe {
+class QueensThatCanAttackTheKingMy {
 // class Solution {
     public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
         

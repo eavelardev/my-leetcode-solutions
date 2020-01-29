@@ -8,7 +8,7 @@ import java.util.*;
 
 // @lc code=start
 
-class FrogJumpMe {
+class FrogJumpMy {
 // class Solution {
     public boolean canCross(int[] stones) {
         

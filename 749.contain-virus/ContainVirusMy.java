@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-class ContainVirusMe {
+class ContainVirusMy {
 // class Solution {
     public int containVirus(int[][] grid) {
 

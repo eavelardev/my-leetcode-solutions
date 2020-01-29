@@ -1,5 +1,5 @@
 import time
-from number_of_islands_me import *
+from number_of_islands_my import *
 from data import *
 
 if __name__ == "__main__":

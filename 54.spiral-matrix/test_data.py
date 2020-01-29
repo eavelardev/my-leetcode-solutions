@@ -1,5 +1,5 @@
 from spiral_matrix_leetcode import *
-# from spiral_matrix_me import *
+# from spiral_matrix_my import *
 from data import *
 
 if __name__ == "__main__":

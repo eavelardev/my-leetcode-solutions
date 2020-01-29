@@ -1,14 +1,14 @@
 import time
 import sys
 import shortest_bridge_leetcode
-import shortest_bridge_me
+import shortest_bridge_my
 from data import *
 
 sys.setrecursionlimit(10**4)
 
 if __name__ == "__main__":
     leetcode_solution = shortest_bridge_leetcode.Solution()
-    my_solution = shortest_bridge_me.Solution()
+    my_solution = shortest_bridge_my.Solution()
 
     for i in range(len(inputs)):
         if leetcode_solution.shortestBridge(inputs[i]) != outputs[i]:

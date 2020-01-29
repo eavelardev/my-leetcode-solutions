@@ -1,7 +1,7 @@
 import time
 import sys
 from shortest_bridge_leetcode import *
-# from shortest_bridge_me import *
+# from shortest_bridge_my import *
 from test_data import *
 
 sys.setrecursionlimit(10**6)

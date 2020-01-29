@@ -1,5 +1,5 @@
 i# from shortest_bridge_leetcode import *
-from shortest_bridge_me import *
+from shortest_bridge_my import *
 from data import *
 
 if __name__ == "__main__":
