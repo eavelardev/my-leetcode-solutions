@@ -48,16 +48,3 @@ class Solution(object):
                     done.add(nei)
         
 # @lc code=end
-
-import time
-from shortest_bridge_tests import *
-
-if __name__ == "__main__":
-    solution = Solution()
-    tic = time.clock()
-    for _ in range(num_tests):
-        for j in range(len(inputs)):
-            solution.shortestBridge(inputs[j])
-    toc = time.clock()
-
-    print(round(toc-tic, 3))

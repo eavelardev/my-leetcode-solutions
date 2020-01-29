@@ -4,11 +4,12 @@
  * [1222] Queens That Can Attack the King
  */
 
-// @lc code=start
-
 import java.util.*;
 
-class Solution {
+// @lc code=start
+
+class QueensThatCanAttackTheKingMe {
+// class Solution {
     public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
         
         int[][] directions = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};

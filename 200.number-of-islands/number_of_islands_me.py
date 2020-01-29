@@ -5,15 +5,16 @@
 #
 
 # @lc code=start
-class Solution:
-    def dfs(self, graph, node, visited):
-        visited[node] = True
+class Solution:                
+    def numIslands(self, grid):
 
-        for next_node in graph[node]:
-            if visited[next_node] is False:
-                self.dfs(graph, next_node, visited)
-                    
-    def numIslands(self, grid: List[List[str]]) -> int:
+        def dfs(graph, node, visited):
+            visited[node] = True
+
+            for next_node in graph[node]:
+                if visited[next_node] is False:
+                    dfs(graph, next_node, visited)  
+
         m = len(grid)
 
         if m == 0:
@@ -35,10 +36,9 @@ class Solution:
 
         for node in graph:
             if visited[node] is False:
-                self.dfs(graph, node, visited)
+                dfs(graph, node, visited)
                 num_islands += 1
 
         return num_islands
-        
-# @lc code=end
 
+# @lc code=end

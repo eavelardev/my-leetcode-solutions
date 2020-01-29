@@ -58,20 +58,3 @@ class Solution:
             size_bridge += 1
            
 # @lc code=end
-
-import time
-import sys 
-from shortest_bridge_tests import *
-
-sys.setrecursionlimit(10**6) 
-
-if __name__ == "__main__":
-    solution = Solution()
-    tic = time.clock()
-    for f in range(num_tests):
-        for h in range(len(inputs)):
-            solution.shortestBridge(inputs[h])
-    toc = time.clock()
-
-    print(round(toc-tic, 3))
-

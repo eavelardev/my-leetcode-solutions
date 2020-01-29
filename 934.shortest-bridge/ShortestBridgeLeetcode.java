@@ -5,7 +5,9 @@
  */
 
 // @lc code=start
-class Solution {
+
+class ShortestBridgeLeetcode {
+// class Solution {
     public int shortestBridge(int[][] A) {
         int R = A.length, C = A[0].length;
         int[][] colors = getComponents(A);

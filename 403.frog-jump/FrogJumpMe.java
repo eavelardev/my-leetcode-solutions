@@ -4,8 +4,12 @@
  * [403] Frog Jump
  */
 
+import java.util.*;
+
 // @lc code=start
-class Solution {
+
+class FrogJumpMe {
+// class Solution {
     public boolean canCross(int[] stones) {
         
         List<Integer> lstones = new ArrayList<Integer>();

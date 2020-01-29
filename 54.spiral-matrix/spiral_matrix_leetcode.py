@@ -5,7 +5,8 @@
 #
 
 # @lc code=start
-class Solution(object):
+
+class Solution:
     def spiralOrder(self, matrix):
         if not matrix: return []
         R, C = len(matrix), len(matrix[0])
@@ -26,16 +27,3 @@ class Solution(object):
         return ans
 
 # @lc code=end
-
-import time
-from spiral_matrix_tests import *
-
-if __name__ == "__main__":
-    tic = time.clock()
-    for _ in range(num_tests):
-        for j in range(len(inputs)):
-            solution = Solution()
-            solution.spiralOrder(inputs[j])
-    toc = time.clock()
-
-    print(round(toc-tic, 3))

@@ -5,7 +5,9 @@
  */
 
 // @lc code=start
-class Solution {
+
+class TwoSumLettcode {
+// class Solution {
     /**
      * Approach 1: Brute Force
      */
